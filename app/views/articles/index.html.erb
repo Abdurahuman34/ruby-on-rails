@@ -1,0 +1,22 @@
+<h1>Articles</h1>
+
+Our blog has <%= Article.public_count %> articles and counting!
+
+<ul>
+  <% @articles.each do |article| %>
+    <% unless article.archived? %>
+      <li>
+        <%= link_to article.title, category_article_path(article.category, article) %>
+      </li>
+    <% end %>
+  <% end %>
+</ul>
+
+<%= link_to "New Article", new_category_article_path(@category) %>
+<br>
+<%= link_to "Edit Category", edit_category_path(@category) %>
+<br>
+<%= link_to "Delete Category", category_path(@category), data: {
+    turbo_method: :delete,
+    turbo_confirm: "Are you sure?"
+  } %>
