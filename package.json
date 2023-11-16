@@ -1,0 +1,12 @@
+{
+  "name": "blogapp",
+  "version": "1.0.0",
+  "description": "blog app",
+  "main": "index.js",
+  "repository": "https://github.com/Abdurahuman34/ruby-on-rails.git",
+  "author": "aden",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}
