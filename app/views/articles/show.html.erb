@@ -10,8 +10,10 @@
   } %></li>
 </ul>
 
+<div class="comment-section"
 <h2>Comments</h2>
-<%= render @article.comments %>
+<div id="category-id" data-category="<% @category.id %>"
+<button id="load-comments"> load-comments</button>
 
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>

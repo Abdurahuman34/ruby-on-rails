@@ -51,6 +51,7 @@ gem 'bootstrap', require: false
 
 #stripe for payments
 gem 'stripe'
+gem 'webpacker'
 
 
 group :development, :test do
